@@ -1,0 +1,134 @@
+@import "../../../../assets/styles/variables";
+@import "../../../../assets/styles/mixins";
+
+footer.footer {
+  padding-top: 40px;
+  padding-bottom: 54px;
+  background-color: #B9D5FD;
+
+  .container {
+
+    .footer-top {
+      font-family: 'Montserrat', sans-serif;
+      color: #071739;
+      font-size: 16px;
+      font-weight: 400;
+      margin-bottom: 40px;
+      display: flex;
+      align-items: center;
+
+      .logo {
+        margin-right: 40px;
+      }
+
+      .footer-menu {
+
+        nav ul {
+          margin: 0;
+          padding: 0;
+          display: flex;
+
+          li {
+            margin-right: 20px;
+            list-style: none;
+
+            &.active a {
+              color: $light-blue-text-color;
+            }
+
+            a {
+              color: $blue-text-color;
+              cursor: pointer;
+              text-decoration: none;
+            }
+          }
+        }
+      }
+    }
+
+    .footer-bottom {
+      .footer-bottom-content {
+        display: flex;
+        margin-bottom: 6px;
+
+        .footer-bottom-block {
+          margin-right: 60px;
+
+          &.footer-block-address {
+            width: 253px;
+          }
+
+          &:last-child {
+            margin-right: 0;
+          }
+
+          .footer-head {
+            color: $light-blue-text-color;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 16px;
+            font-weight: 500;
+            margin-bottom: 10px;
+
+            &:last-child {
+              margin-bottom: 15px;
+            }
+          }
+
+          .footer-info {
+            color: $blue-text-color;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 16px;
+            font-weight: 400;
+
+            &.footer-address {
+              line-height: 130%;
+            }
+
+            &.footer-phone {
+              text-decoration: none;
+              cursor: pointer;
+            }
+
+            &.footer-email {
+              font-size: 14px;
+              text-decoration: none;
+              cursor: pointer;
+            }
+          }
+
+          &.footer-block-phone {
+            display: block;
+
+            .footer-button {
+              margin-top: 10px;
+
+              .button {
+                padding: 10px 20px;
+                width: 153px;
+                font-size: 12px;
+                font-weight: 500;
+              }
+            }
+          }
+
+          .footer-socials {
+            display: flex;
+            align-items: center;
+
+            a {
+              margin-right: 12px;
+            }
+          }
+        }
+      }
+
+
+      .footer-bottom-rights {
+        color: $light-blue-text-color;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 16px;
+        font-weight: 400;
+      }
+    }
+  }
+}

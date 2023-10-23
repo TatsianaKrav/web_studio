@@ -1,0 +1,459 @@
+@import "../../../assets/styles/mixins";
+
+.main {
+  padding-bottom: 60px;
+
+
+  .container {
+    position: relative;
+
+    .arrow-prev {
+      position: absolute;
+      left: 10px;
+      top: calc(50% - 7px);
+      z-index: 2;
+      cursor: pointer;
+    }
+
+    .arrow-next {
+      position: absolute;
+      right: 10px;
+      top: calc(50% - 7px);
+      z-index: 2;
+      cursor: pointer;
+    }
+
+    ::ng-deep {
+      .main-offer {
+        height: 400px;
+        padding: 100px 0 0 80px;
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+
+        .main-offer-info {
+          .offer-pretitle {
+            color: $light-blue-text-color;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 12px;
+            font-weight: 600;
+            letter-spacing: 4.8px;
+            text-transform: uppercase;
+          }
+
+
+          .main-offer-title {
+            color: #FFF;
+            font-family: 'Lora', sans-serif;
+            font-size: 50px;
+            font-weight: 400;
+            line-height: 130%;
+            margin-bottom: 20px;
+            width: 573px;
+
+            &.initial {
+              margin-bottom: 40px;
+            }
+
+            span {
+              color: $light-blue-text-color;
+            }
+          }
+
+
+          .main-offer-text {
+            color: #FFF;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 24px;
+            font-weight: 400;
+            line-height: 130%;
+            width: 456px;
+          }
+
+          .main-offer-button {
+            margin-top: 50px;
+
+            &.initial {
+              margin-top: 0;
+            }
+
+            .button {
+              width: 163px;
+
+            }
+          }
+        }
+
+        .main-image {
+          position: absolute;
+          top: 0;
+          right: 0;
+          z-index: -3;
+        }
+
+        .main-offer-circle {
+          position: absolute;
+          top: 0;
+          left: 0;
+          z-index: -2;
+        }
+
+        &.minor {
+          .main-offer-info {
+            .main-offer-title {
+              margin-bottom: 20px;
+            }
+          }
+        }
+      }
+    }
+
+  }
+}
+
+.services {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  .container {
+    .services-title {
+      @include head-lora-38;
+      margin-bottom: 40px;
+    }
+
+    .cards {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      .card {
+        width: 290px;
+        height: 498px;
+        box-sizing: border-box;
+
+        .card-image {
+          width: 291px;
+          height: 291px;
+          border-radius: 5px;
+          background-size: cover;
+          background-position: center;
+        }
+
+        .card-title {
+          color: $light-blue-text-color;
+          font-family: 'Montserrat', sans-serif;
+          font-size: 20px;
+          font-weight: 500;
+          margin-top: 15px;
+        }
+
+        .card-description {
+          height: 90px;
+          margin-top: 10px;
+          margin-bottom: 0;
+          color: $blue-text-color;
+          font-family: 'Montserrat', sans-serif;
+          font-size: 14px;
+          font-weight: 400;
+          line-height: 130%;
+        }
+
+        .card-info {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          margin-top: 15px;
+
+          .card-price {
+            color: $light-blue-text-color;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 20px;
+            font-weight: 600;
+            line-height: 130%;
+          }
+
+          .card-action .button {
+            text-align: center;
+            width: 163px;
+          }
+        }
+
+        .linkReadMore {
+          margin-top: 20px;
+
+          a {
+            color: $light-blue-text-color;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 16px;
+            font-weight: 400;
+            text-decoration-line: underline;
+          }
+
+        }
+
+      }
+    }
+  }
+}
+
+.aboutUs {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .aboutUs-info {
+      margin-right: 9px;
+      max-width: 710px;
+
+      .aboutUs-info-title {
+        @include head-lora-38;
+        margin-bottom: 20px;
+      }
+
+      .aboutUs-info-description {
+        color: $blue-text-color;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 130%;
+        margin-bottom: 40px;
+        max-width: 633px;
+
+        span {
+          font-weight: 500;
+        }
+      }
+
+      .aboutUs-info-benefits {
+        .benefits-title {
+          color: $light-blue-text-color;
+          font-family: 'Lora', sans-serif;
+          font-size: 26px;
+          font-weight: 400;
+          margin-bottom: 20px;
+        }
+
+        .info-benefits {
+          display: grid;
+          grid-template-columns: repeat(2, 316px);
+          gap: 20px 78px;
+
+          .aboutUs-info-benefit {
+            display: flex;
+            align-items: center;
+
+            .benefit-number {
+              width: 40px;
+              height: 40px;
+              border-radius: 50%;
+              background-color: #B9D5FD;
+              margin-right: 20px;
+              position: relative;
+
+              span {
+                color: $light-blue-text-color;
+                font-family: 'Lora', sans-serif;
+                font-size: 50px;
+                font-weight: 500;
+                line-height: 130%; /* 65px */
+                position: absolute;
+                left: calc(50% - 14px);
+                bottom: -6px;
+              }
+            }
+
+            &:first-child .benefit-number span {
+              left: calc(50% - 8px);
+            }
+
+            .benefit-description {
+              color: #1E1A2B;
+              font-family: 'Montserrat', sans-serif;
+              font-size: 14px;
+              font-weight: 400;
+              line-height: 130%;
+              max-width: 256px;
+
+              span {
+                font-weight: 500;
+              }
+            }
+
+          }
+        }
+      }
+    }
+  }
+}
+
+.popularArticles {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  .container {
+    .popularArticles-title {
+      @include head-lora-38;
+      margin-bottom: 40px;
+    }
+
+    .popularArticles-items {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .linkToBlog {
+      margin-top: 40px;
+      text-align: right;
+
+      a {
+        color: $light-blue-text-color;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 20px;
+        font-weight: 500;
+        text-decoration: none;
+
+        span {
+          margin-right: 14px;
+        }
+      }
+    }
+  }
+
+
+}
+
+.reviews {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  .container {
+
+    .reviews-title {
+      @include head-lora-38;
+      margin-bottom: 20px;
+    }
+
+    .reviews-cards {
+      position: relative;
+
+      .arrow-prev {
+        position: absolute;
+        left: -30px;
+        top: 118px;
+        cursor: pointer;
+
+      }
+
+      .arrow-next {
+        position: absolute;
+        right: -30px;
+        top: 118px;
+        cursor: pointer;
+
+      }
+
+      .review-card {
+        width: 396px;
+        height: 267px;
+        padding: 30px;
+        border-radius: 5px;
+        border: 2px solid $light-blue-text-color;
+        box-sizing: border-box;
+
+        .review-card-head {
+          display: flex;
+          align-items: center;
+          margin-bottom: 15px;
+
+          .review-card-image {
+            margin-right: 26px;
+            width: 60px;
+            height: 60px;
+            background-position: center;
+            background-size: cover;
+            border-radius: 50%;
+
+            img {
+              width: 100%;
+            }
+          }
+
+          .review-card-name {
+            color: $light-blue-text-color;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 18px;
+            font-weight: 600;
+          }
+        }
+
+        .review-card-text {
+          color: $blue-text-color;
+          font-family: 'Montserrat', sans-serif;
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 140%;
+        }
+      }
+    }
+  }
+}
+
+.contacts {
+  padding-top: 60px;
+  padding-bottom: 120px;
+
+  .container {
+    display: flex;
+
+    .contacts-info {
+      margin-left: 26px;
+
+      .contacts-title {
+        @include head-lora-38;
+        margin-bottom: 20px;
+      }
+
+      .contact {
+        margin-bottom: 20px;
+        width: 501px;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+
+        .contact-head {
+          color: $light-blue-text-color;
+          font-family: 'Montserrat', sans-serif;
+          font-size: 20px;
+          font-weight: 500;
+          margin-bottom: 10px;
+        }
+
+        .info {
+          color: $blue-text-color;
+          font-family: 'Montserrat', sans-serif;
+          font-size: 14px;
+          font-weight: 400;
+          line-height: 130%;
+          text-decoration: none;
+          cursor: pointer;
+        }
+
+        &.socials {
+          .socials-icons {
+            display: flex;
+
+            svg {
+              margin-right: 20px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
