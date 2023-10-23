@@ -1,0 +1,19 @@
+.container {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 40px 0;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: #071739;
+  line-height: 130%;
+}
+
+span {
+  font-weight: 500;
+  color: #709FDC;
+}
+
+.termsOfService {
+  margin-bottom: 40px;
+}
